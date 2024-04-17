@@ -51,7 +51,7 @@ body{
     padding-bottom:80px;
 }
 .border3{
-    background-color: rgba(17, 33, 45, 1);
+    background-color: rgba(60, 67, 72);
     /* border-color: white; */
     margin-top: 72px;
     border-style: solid;
@@ -357,14 +357,14 @@ body{
 
 /* 頁尾 */
 .footer div{
-    font-family: Caveat;
-    font-size: 25px;
-    color:white;
+    font-family: Orbitron;
+    font-size: 15px;
+    color:black;
     text-align: center;
 
     height: 100px;
     border-radius: 300px; /*圓角*/
-    background-color: rgba(17, 33, 45, 1);
+    background-color: white;
 
     margin-top: 40px;
     display: flex;
