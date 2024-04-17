@@ -27,10 +27,16 @@ body {
   }
   .font {
     font-family: Kreon;
-    color: black;
-    display: flex;
+    color: whitesmoke;
 
+    border: #fff;
+    border-style: solid;
+    border-radius: 30px;
+
+    display: flex;
     align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
 
   }
   .back {

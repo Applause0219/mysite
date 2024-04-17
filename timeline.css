@@ -2,14 +2,12 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   background-color: #474e5d;
   font-family: Helvetica, sans-serif;
-}
-h2{
-  margin: 0 0 10px;
-  padding: 0;
-}
+} */
+
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;

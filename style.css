@@ -21,14 +21,35 @@ body{
 }
 
 .border1{
-    padding-top:72px;
+    margin-top: 72px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 3px;
+    height: 1600px;
 }
-.body_About{
+.border2{
+    margin-top: 72px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 3px;
+    height: 1000px;
+}
+.border3{
+    background-color: rgba(17, 33, 45, 1);
+
+    margin-top: 72px;
+    border-style: solid;
+    border-radius: 30px;
+    border-width: 3px;
+    height: 1400px;
+}
+
+/* .body_About{
     border-style: solid;
     border-radius: 30px;
     border-width: 3px;
     height: 2000px;
-}
+} */
 
 
 .body_Skills{
@@ -365,11 +386,15 @@ body{
     font-family: Caveat;
     font-size: 25px;
     color:white;
-
     text-align: center;
 
+    height: 100px;
     border-radius: 300px; /*圓角*/
     background-color: rgba(17, 33, 45, 1);
+
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
     align-items:center; 
 }
 
