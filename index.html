@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="chart.css">
+    <link rel="stylesheet" href="progress_bar.css">
+    <link rel="stylesheet" href="card.css">
+
 
 </head>
 <body>
@@ -18,46 +22,76 @@
             </ul>
         </nav>
     </header>
+    <div style="clear: both;">
     <div class=border1>
         <article class="body_About" id="About">
-            <div class="about_top">
                 <div class="me">
                     <img src="image/IGphoto_2.jpg" alt="頭貼">
+                    <div class="contact">
+                        <ul>
+                            <li><a href="https://www.instagram.com/rain_n0219/"><img src="image/icon_ig.png" alt="IG貼圖"></a><br/></li><br/>
+                            <li><a href="https://line.me/ti/p/09IHaRY9_Y"><img src="image/icon_line.png" alt="Line貼圖"></a></li><br/>
+                            <li><a href="mailto:ryanchung50107@gmail.com"><img src="image/icon_gmail.png" alt="gmail貼圖"></a></li><br/>
+                        </ul>
+                    </div>
                 </div>
                 <!-- <img src="image/patrick.png" alt="派大星"> -->
                 <div class="slogn_text text_gradient1">“Life isn't fair,pal.<br/>Get used to it.”</div>
-                <section class="MBTI">
-                    <div style="padding-bottom: 6px;"><div class="about_title1">MBTI</div></div>
-                    <div class="MBTI_content">
+
+                <section class="mbti">
+                    <div style="padding-bottom: 6px;">
+                        <div class="about_title_mbti">MBTI</div>
+                    </div>
+                    <div class="mbti_content">
                         <img src="image/ENFJ.png">
-                        <div class="MBTI_text">ENFJ-T</div>
+                        <div class="mbti_text">ENFJ-T</div>
                     </div>
                 </section>
                 <div style="clear: both;"></div>
-            </div>
-                <div class="contact">
-                    <ul>
-                        <li><a href="https://www.instagram.com/rain_n0219/"><img src="image/icon_ig.png" alt="IG貼圖"></a></li>
-                        <li><a href="https://line.me/ti/p/09IHaRY9_Y"><img src="image/icon_line.png" alt="Line貼圖"></a></li>
-                        <li><a href="mailto:ryanchung50107@gmail.com"><img src="image/icon_gmail.png" alt="gmail貼圖"></a></li>
-                    </ul>
-                </div>
 
-                <section class="Basic_Info">
-                    <div class="about_title2">Basic_Info</div>
-                    <div class="Basic_Info_content">
+                <section class="basic_info">
+                    <div style="padding-bottom:6px;">
+                        <div class="about_title_basic_info">Basic_Info</div>
+                    </div>
+                    <div class="basic_info_content">
                         Name：Yu-Chung Chang<br/>
                         Birth：2004.02.19<br/>
                         Tel：0905195792<br/>
                         Address：Taoyuan
                     </div>
                 </section>
-                <section class="Interest">
-                    <div class="about_title3">Interest</div>
-                    <div class="Interest_content">
+                <section class="interest">
+                    <div style="padding-bottom:6px;">
+                        <div class="about_title_interest">Interest</div>
+                    </div>
+                    <div class="interest_content">
                         Basketball, Dancing, Fitness, Movie,<br/>
                         Anime, Sweets, Video_Game,<br/>
                         Bowling, Pool_ball, Table_tennis, Badminton
+                    </div>
+                </section>
+                <section class="work_ex">
+                    <div style="padding-bottom:6px;">
+                        <div class="about_title_work_ex">Work Ex</div>
+                    </div>
+                    <div class="work_ex_content">
+                        <ul>
+                            <li>reception staff in FAME HALL GARDEN HOTEL</li>
+                            <li>Gojo sensei in Tokyo Metropolitan Curse Technical College</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="education">
+                    <div style="padding-bottom:6px;">
+                        <div class="about_title_education">Education</div>
+                    </div>
+                    <div class="education_content">
+                        <ul>
+                            <li>2020-2016 Longtan Elementary School</li>
+                            <li>2017-2020 CPSHS Junior High School</li>
+                            <li>2020-2023 CPSHS Senior High School</li>
+                            <li>2022-Now CYCU College</li>
+                        </ul>
                     </div>
                 </section>
         </article>
@@ -67,17 +101,49 @@
         <div class="soft_skills">
         <div class="about_title">Soft Skills</div>
         <div>
+            <div class="pie animate" style="--p:90;--c:#253745"> 90%</div>
             Creavity
-            Leadership
+        </div>
+        <div>
+            <div class="pie animate" style="--p:90;--c:#253745"> 90%</div>
+             Leadership
+        </div>
+        <div>
+            <div class="pie animate" style="--p:90;--c:#253745"> 90%</div>
             Teamwork
+        </div>
+        <div>
+            <div class="pie animate" style="--p:90;--c:#253745"> 90%</div>
             Communication
         </div>
         <div class="programming">
-            <h1>Programming</h1>
-            Python
-            Java
-            HTML
-            CSS
+            <div class=progress_bar>
+                <div class="progress_bar_text">HTML</div>
+                <div class="range" style="--p:60">
+                    <div class="range__label"></div>
+                </div>
+            </div>
+        
+            <div class=progress_bar>
+                <div class="progress_bar_text">CSS</div>
+                <div class="range" style="--p:30">
+                    <div class="range__label"></div>
+                </div>
+            </div>
+        
+            <div class=progress_bar>
+                <div class="progress_bar_text">Java</div>
+                <div class="range" style="--p:60">
+                    <div class="range__label"></div>
+                </div>
+            </div>
+        
+            <div class=progress_bar>
+                <div class="progress_bar_text">Python</div>
+                <div class="range" style="--p:50">
+                    <div class="range__label"></div>
+                </div>
+            </div>
         </div>
     </article>
 
