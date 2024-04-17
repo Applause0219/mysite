@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 @property --p{
     syntax: '<number>';
     inherits: true;
@@ -18,7 +20,7 @@
     place-content:center;
     font-size:25px;
     font-weight:bold;
-    font-family:sans-serif;
+    font-family:Orbitron;
   }
   .pie:before,
   .pie:after {

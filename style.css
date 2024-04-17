@@ -25,14 +25,24 @@ body{
     border-style: solid;
     border-radius: 30px;
     border-width: 3px;
-    height: 1600px;
+    height: 1100px;
+
+    padding-left: 95px;
+    padding-top: 80px;
+    padding-right: 95px;
+    padding-bottom:80px;
 }
 .border2{
     margin-top: 72px;
     border-style: solid;
     border-radius: 30px;
     border-width: 3px;
-    height: 1000px;
+    height: 500px;
+
+    padding-left: 95px;
+    padding-top: 80px;
+    padding-right: 95px;
+    padding-bottom:80px;
 }
 .border3{
     background-color: rgba(17, 33, 45, 1);
@@ -116,22 +126,19 @@ body{
 /*聯絡方式,頭貼*/
 .me{ 
     display: flex;
-
-    padding-left: 95px;
-    padding-top: 80px;
+    float: left;
+    /* padding-left: 95px;
+    padding-top: 80px; */
 }
 
 
 /*聯絡方式*/
 .contact{ 
-    padding-top: 0px;
-    padding-left: 0px;
-    margin-top: 0px;
-    width:fit-content;
+    display: flex;
+    margin-top: 35px;
     height: 55px;
 }
 .contact ul{
-    display: flex;
     padding: 0px;
 }
 .contact ul li{
@@ -140,44 +147,28 @@ body{
     /* display: inline-flex;       不換行 */
 }
  /*標語*/
- /* .slogn img{
-    float:right;
-} */
 .slogn{
     
 }
 .slogn_text{  
     font-family: Caveat Brush; /* 字型 */
-    font-size: 64px; /* 字體大小 */
+    font-size: 96px; /* 字體大小 */
     text-decoration: underline; /*底線*/
     /* text-shadow: 12px 8px 3px silver; 文字陰影 */
     
     display: flex;
-    float:right ;
+    float: right;
 
-    width: 450px;
-    height: 170px;
-
-    padding-left: 60px;
-    padding-top: 120px;
-    padding-right: 90px;
-   
-
+    width: 652px;
+    height: 245px;
 }
 
-
 /*MBTI,基本資料,興趣*/
-
-
-
-
-
 .mbti{
     height: 253px;
     width: fit-content;
 
     float: right;
-    padding-top: 80px;
 }
 .about_title_mbti{
     color: white;
@@ -213,11 +204,13 @@ body{
     font-family:Kreon ;
     font-size: 48px;
     align-items: center;
+    
     height: 192 px;
 }
 
 .basic_info{
-
+    margin:6px;
+    float: right;
 }
 .about_title_basic_info{
     color: white;
@@ -246,13 +239,18 @@ body{
     border-width: 1px;
 
     display: flex;
-    width: 400px;;
+    width: 400px;
+    height: 169px;
     justify-content: center;
+    align-items: center;
 }
 
 .interest{
     font-family: Kreon;
     font-size: 24px;
+
+    margin:6px;
+    float: right;
 }
 .about_title_interest{
     color: white;
@@ -273,6 +271,7 @@ body{
     font-family: Kreon ;
     font-size: 24px;
     color: white;
+    text-align: center;
 
     background-color: #9BA8AB;
     border-style: solid;
@@ -281,13 +280,16 @@ body{
     border-width: 1px;
 
     display: flex;
-    width: 400px;;
+    width: 400px;
+    height: 250px;
     justify-content: center;
+    align-items: center;
 }
 
 
 .work_ex{
-
+    margin:6px;
+    float: left;
 }
 .about_title_work_ex{
     color: white;
@@ -297,12 +299,12 @@ body{
 
     background-color: #9BA8AB;
     border-style: solid;
-    border-color: black;
+    /* border-color: black; */
     border-radius: 30px;
     border-width: 1px;
 
     display: flex;
-    width: 161px;;
+    width: 180px;;
     justify-content: center;
 }
 .work_ex_content{
@@ -317,12 +319,15 @@ body{
     border-width: 1px;
 
     display: flex;
-    width: 400px;;
+    width: 500px;;
+    height: 169px;
     justify-content: center;
+    align-items: center;
 }
 
 .education{
-
+    margin:6px;
+    float: left;
 }
 .about_title_education{
     color: white;
@@ -332,12 +337,12 @@ body{
 
     background-color: #9BA8AB;
     border-style: solid;
-    border-color: black;
+    /* border-color: black; */
     border-radius: 30px;
     border-width: 1px;
 
     display: flex;
-    width: 161px;;
+    width: 200px;;
     justify-content: center;
 }
 
@@ -353,10 +358,16 @@ body{
     border-width: 1px;
 
     display: flex;
-    width: 400px;;
+    width: 498px;
+    height: 250px;
     justify-content: center;
+    text-align: center;
 }
 
+.education_content ul li{
+    margin-top: 15px;
+    text-align: left;
+}
 
 /* 技能 */
 
