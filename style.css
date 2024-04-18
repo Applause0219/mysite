@@ -2,6 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Kreon:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Caveat:wght@400..700&family=Kreon:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+/* 平行四邊形 */
+.parallelograms {
+    transform: skew(-15deg);
+    /* color, paddings, etc. */    
+    padding: .5em 1.5em;
+  }
+  
 /* 文字漸層 */
 .text_gradient1{
     background: linear-gradient(135deg, black, #424242, #777777); /*設定漸層背景*/
@@ -32,10 +39,10 @@ body{
     border-width: 3px;
     height: 1100px;
 
-    padding-left: 95px;
-    padding-top: 80px;
-    padding-right: 95px;
-    padding-bottom:80px;
+    padding-left: 150px;
+    padding-top: 100px;
+    padding-right: 150px;
+    padding-bottom:120px;
 }
 .border2{
     margin-top: 72px;
@@ -43,7 +50,7 @@ body{
     border-color: white;
     border-radius: 30px;
     border-width: 3px;
-    height: 500px;
+    height: 700px;
 
     padding-left: 95px;
     padding-top: 80px;
@@ -54,10 +61,12 @@ body{
     background-color: rgba(60, 67, 72);
     /* border-color: white; */
     margin-top: 72px;
+    padding-top: 60px;
+    padding-bottom: 60px ;
     border-style: solid;
     border-radius: 30px;
     border-width: 3px;
-    height: 1400px;
+    height: 1500px;
 }
 
 .body_Skills{
@@ -67,19 +76,7 @@ body{
 .body_Experiences{
     
 }
-/* 導覽列 */
-.navigation{
-    margin: 0px;
-    /* 文字設定 */
-    font-weight: 400;
-    color: black;
-    /* 背景設定 */
-    height: 97px;
-    width: 100%;
-    border-radius: 300px; /*圓角*/
-    background-color: white; 
-    /* 排版設定 */
-}
+
 
 /* 標題 */
 .header_title{
@@ -92,6 +89,19 @@ body{
 
     display: flex;
     float: left;
+}
+/* 導覽列 */
+.navigation{
+    margin: 0px;
+    /* 文字設定 */
+    font-weight: 400;
+    color: black;
+    /* 背景設定 */
+    height: 97px;
+    width: 100%;
+    border-radius: 20px; /*圓角*/
+    background-color: white; 
+    /* 排版設定 */
 }
 .navigation ul{
     display: flex;
@@ -150,14 +160,21 @@ body{
     
 }
 .slogn_text{  
+    color: whitesmoke;
     font-family: Orbitron; /* 字型 */
-    font-size: 70px; /* 字體大小 */
-    text-decoration: underline ; /*底線*/
+    font-size: 72px; /* 字體大小 */
+    text-decoration:  gray underline ; /*底線*/
     /* text-shadow: 12px 8px 3px silver; 文字陰影 */
-    
+    border-style: outset;
+    border-width: 3px;
+    border-color: black;
+    border-radius: 15px;
+    background-color: black;
+
     display: flex;
     float: right;
-    padding-top: 30px;
+    align-items: center;
+    justify-content: center;
 
     width: 652px;
     height: 260px;
@@ -170,14 +187,15 @@ body{
     float: right;
 }
 .about_title_basic_info{
-    color: black;
+    color: #CA5D87;
     font-family: Orbitron;
     font-size: 28px;
     font-weight: 700;
 
     background-color: white;
     border-style: solid;
-    border-radius: 30px;
+    border-color: black;
+    border-radius: 10px;
     border-width: 4px;
 
     display: flex;
@@ -192,7 +210,7 @@ body{
     background-color: white;
     border-style: solid;
     border-color: black;
-    border-radius: 30px;
+    border-radius: 15px;
     border-width: 4px;
 
     display: flex;
@@ -210,14 +228,15 @@ body{
     float: right;
 }
 .about_title_interest{
-    color: black;
+    color: #CA5D87;
     font-family: Orbitron;
     font-size: 28px;
     font-weight: 700;
 
-    background-color: white;
+    background-color: black;
     border-style: solid;
-    border-radius: 30px;
+    border-color: white;
+    border-radius: 10px;
     border-width: 4px;
 
     display: flex;
@@ -227,13 +246,13 @@ body{
 .interest_content{
     font-family: Kreon;
     font-size: 24px;
-    color: black;
+    color: white;
     text-align: center;
 
-    background-color: white;
+    background-color: black;
     border-style: solid;
-    border-color: black;
-    border-radius: 30px;
+    border-color: white;
+    border-radius: 15px;
     border-width: 4px;
 
     display: flex;
@@ -249,15 +268,15 @@ body{
     float: left;
 }
 .about_title_work_ex{
-    color: black;
+    color: #CA5D87;
     font-family: Orbitron;
     font-size: 28px;
     font-weight: 700;
 
-    background-color: white;
+    background-color: black;
     border-style: solid;
-    /* border-color: black; */
-    border-radius: 30px;
+    border-color: white;
+    border-radius: 10px;
     border-width: 4px;
 
     display: flex;
@@ -267,12 +286,12 @@ body{
 .work_ex_content{
     font-family: Kreon ;
     font-size: 24px;
-    color: black;
+    color: white;
 
-    background-color: white;
+    background-color: black;
     border-style: solid;
-    border-color: black;
-    border-radius: 30px;
+    border-color: white;
+    border-radius: 15px;
     border-width: 4px;
 
     display: flex;
@@ -287,15 +306,15 @@ body{
     float: left;
 }
 .about_title_education{
-    color: black;
+    color: #CA5D87;
     font-family: Orbitron;
     font-size: 28px;
     font-weight: 700;
 
     background-color: white;
     border-style: solid;
-    /* border-color: black; */
-    border-radius: 30px;
+    border-color: black;
+    border-radius: 10px;
     border-width: 4px;
 
     display: flex;
@@ -311,7 +330,7 @@ body{
     background-color: white;
     border-style: solid;
     border-color: black;
-    border-radius: 30px;
+    border-radius: 15px;
     border-width: 4px;
 
     display: flex;
@@ -327,15 +346,40 @@ body{
 }
 
 /* 技能 */
+.Skills{
 
-.soft_skills {
-
+    align-items: center;
+    height: 450px;
 }
 
-.about_title_soft_skills{
+.soft_skills {
+    font-family: Orbitron;
+    color: #ffffff;
+
+    align-items: center;
+    width: 33.333%;
+    margin-left:60px ;
+}
+.about_title_ability{
     font-family: Orbitron;
     color: white;
     font-size: 40px;
+    
+    display: flex;
+    margin-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.ability_text{
+    display: flex;
+}
+
+.programming{
+    width: 33.333%;
+    height:330px;
+    
+    margin-right: 60px;
+    float:right;
 }
 
 /* 經驗 */
@@ -345,7 +389,7 @@ body{
 }
 .exp_content{
     border-style: solid;
-    border-radius: 30px;
+    border-radius: 15px;
 
     width: 429px;
     height: 286px;
@@ -363,7 +407,7 @@ body{
     text-align: center;
 
     height: 100px;
-    border-radius: 300px; /*圓角*/
+    border-radius: 20px; /*圓角*/
     background-color: white;
 
     margin-top: 40px;
@@ -372,4 +416,35 @@ body{
     align-items:center; 
 }
 
-
+/* 回至頂部 */
+.back-top {
+    z-index: 99999;
+    position: fixed;
+    bottom: 200px;
+    right: 15px;
+    cursor: pointer;
+    opacity: 0.5;
+    filter: Alpha(opacity=50);
+    width: 60px;
+    height: 60px;
+    background: rgba(250,205,15) center no-repeat
+      url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4wLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4KCjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgeG1sbnM6c29kaXBvZGk9Imh0dHA6Ly9zb2RpcG9kaS5zb3VyY2Vmb3JnZS5uZXQvRFREL3NvZGlwb2RpLTAuZHRkIgogICB4bWxuczppbmtzY2FwZT0iaHR0cDovL3d3dy5pbmtzY2FwZS5vcmcvbmFtZXNwYWNlcy9pbmtzY2FwZSIKICAgdmVyc2lvbj0iMS4xIgogICBpZD0iQ2FwYV8xIgogICB4PSIwcHgiCiAgIHk9IjBweCIKICAgd2lkdGg9IjUxMnB4IgogICBoZWlnaHQ9IjUxMnB4IgogICB2aWV3Qm94PSIwIDAgNDUxLjg0NiA0NTEuODQ3IgogICBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0NTEuODQ2IDQ1MS44NDc7IgogICB4bWw6c3BhY2U9InByZXNlcnZlIgogICBpbmtzY2FwZTp2ZXJzaW9uPSIwLjQ4LjUgcjEwMDQwIgogICBzb2RpcG9kaTpkb2NuYW1lPSJhcnJvdy1wb2ludC10by1yaWdodC5zdmciPjxtZXRhZGF0YQogICBpZD0ibWV0YWRhdGE0MSI+PHJkZjpSREY+PGNjOldvcmsKICAgICAgIHJkZjphYm91dD0iIj48ZGM6Zm9ybWF0PmltYWdlL3N2Zyt4bWw8L2RjOmZvcm1hdD48ZGM6dHlwZQogICAgICAgICByZGY6cmVzb3VyY2U9Imh0dHA6Ly9wdXJsLm9yZy9kYy9kY21pdHlwZS9TdGlsbEltYWdlIiAvPjwvY2M6V29yaz48L3JkZjpSREY+PC9tZXRhZGF0YT48ZGVmcwogICBpZD0iZGVmczM5IiAvPjxzb2RpcG9kaTpuYW1lZHZpZXcKICAgcGFnZWNvbG9yPSIjZmZmZmZmIgogICBib3JkZXJjb2xvcj0iIzY2NjY2NiIKICAgYm9yZGVyb3BhY2l0eT0iMSIKICAgb2JqZWN0dG9sZXJhbmNlPSIxMCIKICAgZ3JpZHRvbGVyYW5jZT0iMTAiCiAgIGd1aWRldG9sZXJhbmNlPSIxMCIKICAgaW5rc2NhcGU6cGFnZW9wYWNpdHk9IjAiCiAgIGlua3NjYXBlOnBhZ2VzaGFkb3c9IjIiCiAgIGlua3NjYXBlOndpbmRvdy13aWR0aD0iMTYwMCIKICAgaW5rc2NhcGU6d2luZG93LWhlaWdodD0iODM3IgogICBpZD0ibmFtZWR2aWV3MzciCiAgIHNob3dncmlkPSJmYWxzZSIKICAgaW5rc2NhcGU6em9vbT0iMC40NjA5Mzc1IgogICBpbmtzY2FwZTpjeD0iMjU2IgogICBpbmtzY2FwZTpjeT0iMjU2IgogICBpbmtzY2FwZTp3aW5kb3cteD0iLTgiCiAgIGlua3NjYXBlOndpbmRvdy15PSItOCIKICAgaW5rc2NhcGU6d2luZG93LW1heGltaXplZD0iMSIKICAgaW5rc2NhcGU6Y3VycmVudC1sYXllcj0iQ2FwYV8xIiAvPgo8ZwogICBpZD0iZzMiCiAgIHN0eWxlPSJmaWxsOiNmZmZmZmYiCiAgIHRyYW5zZm9ybT0ibWF0cml4KDAsLTEsLTEsMCw0NTEuODQ2NSw0NTEuODQ2NSkiPgoJPHBhdGgKICAgZD0iTSAzNDUuNDQxLDI0OC4yOTIgMTUxLjE1NCw0NDIuNTczIGMgLTEyLjM1OSwxMi4zNjUgLTMyLjM5NywxMi4zNjUgLTQ0Ljc1LDAgLTEyLjM1NCwtMTIuMzU0IC0xMi4zNTQsLTMyLjM5MSAwLC00NC43NDQgTCAyNzguMzE4LDIyNS45MiAxMDYuNDA5LDU0LjAxNyBjIC0xMi4zNTQsLTEyLjM1OSAtMTIuMzU0LC0zMi4zOTQgMCwtNDQuNzQ4IDEyLjM1NCwtMTIuMzU5IDMyLjM5MSwtMTIuMzU5IDQ0Ljc1LDAgbCAxOTQuMjg3LDE5NC4yODQgYyA2LjE3Nyw2LjE4IDkuMjYyLDE0LjI3MSA5LjI2MiwyMi4zNjYgMCw4LjA5OSAtMy4wOTEsMTYuMTk2IC05LjI2NywyMi4zNzMgeiIKICAgaWQ9InBhdGg1IgogICBzdHlsZT0iZmlsbDojZmZmZmZmIgogICBpbmtzY2FwZTpjb25uZWN0b3ItY3VydmF0dXJlPSIwIiAvPgo8L2c+CjxnCiAgIGlkPSJnNyI+CjwvZz4KPGcKICAgaWQ9Imc5Ij4KPC9nPgo8ZwogICBpZD0iZzExIj4KPC9nPgo8ZwogICBpZD0iZzEzIj4KPC9nPgo8ZwogICBpZD0iZzE1Ij4KPC9nPgo8ZwogICBpZD0iZzE3Ij4KPC9nPgo8ZwogICBpZD0iZzE5Ij4KPC9nPgo8ZwogICBpZD0iZzIxIj4KPC9nPgo8ZwogICBpZD0iZzIzIj4KPC9nPgo8ZwogICBpZD0iZzI1Ij4KPC9nPgo8ZwogICBpZD0iZzI3Ij4KPC9nPgo8ZwogICBpZD0iZzI5Ij4KPC9nPgo8ZwogICBpZD0iZzMxIj4KPC9nPgo8ZwogICBpZD0iZzMzIj4KPC9nPgo8ZwogICBpZD0iZzM1Ij4KPC9nPgo8L3N2Zz4=);
+    background-size: 24px 24px;
+    border-radius: 300px;
+    border: 1px rgba(255, 255, 255, 0.6) solid;
+    box-shadow: 0px 0px 3px #ffffff;
+    transform: translateY(0%);
+    transition: all 0.2s linear;
+  }
+  
+  .back-top:hover {
+    opacity: 0.8;
+    filter: Alpha(opacity=80);
+    box-shadow: 0px 0px 6px #ffffff;
+  }
+  
+  .back-top.hide {
+    opacity: 0;
+    filter: Alpha(opacity=0);
+    transform: translateY(150%);
+  }

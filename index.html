@@ -21,7 +21,7 @@
             </ul>
         </nav>
     </header>
-    <div style="clear: both;">
+    <div style="clear: both;"></div>
     <div class=border1>
         <article id="About">
             <div style="margin-bottom: 60px;">
@@ -36,7 +36,7 @@
                     </div>
                 </div>
                 <!-- <img src="image/patrick.png" alt="派大星"> -->
-                <div class="slogn_text text_gradient1">“Life isn't fair,pal.<br/>Get used to it.”</div>
+                <div class="slogn_text parallelograms">“Life isn't fair, pal.<br/>Get used <br/>to it.”</div>
                 <div style="clear: both;"></div>
             </div>    
                 <section class="work_ex">
@@ -103,50 +103,59 @@
         </article>
     </div>
     <div class=border2>
-        <article id="Skills">
+        <article id="Skills" class="Skills">
             <div class="soft_skills" style="float: left;">
-                <div class="about_title_soft_skills">Soft Skills</div>
-                <div style="float: left;">
-                    <div class="pie animate" style="--p:90;--c:#F3E600"><div class="percent">90%</div></div>
-                    Creavity
+                <div class="about_title_ability">SOFT_SKILLS</div>
+                <div style="float: left; padding:20px">
+                    <div class="pie animate" style="--p:90;--c:#F3E600">
+                        <div class="percent">90%</div>
+                    </div>
+                    <div class="ability_text">Creavity</div>
                 </div>
                 <div style="float: right;">
-                    <div class="pie animate" style="--p:70;--c:#F3E600"><div class="percent">70%</div></div>
-                    Leadership
+                    <div class="pie animate" style="--p:70;--c:#F3E600">
+                        <div class="percent">70%</div>
+                    </div>
+                    <div class="ability_text">Leadership</div>
                 </div>
                 <div style="clear: both;"></div>
                 <div style="float: left;">
-                    <div class="pie animate" style="--p:50;--c:#F3E600"><div class="percent">50%</div></div>
-                    Teamwork
+                    <div class="pie animate" style="--p:50;--c:#F3E600">
+                        <div class="percent">50%</div>
+                    </div>
+                    <div class="ability_text">Teamwork</div>
                 </div>
                 <div style="float: right;">
-                    <div class="pie animate" style="--p:60;--c:#F3E600"><div class="percent">60%</div></div>
-                    Communication
+                    <div class="pie animate" style="--p:60;--c:#F3E600">
+                        <div class="percent">60%</div>
+                    </div>
+                    <div class="ability_text">Communication</div>
                 </div>
                 <div style="clear: both;"></div>
             </div>
-            <div class="programming" style="float: right;">
+
+            <!-- <div class="about_title_ability">Soft Skills/<br/><br/>Programming</div> -->
+
+            <div class="programming">
+                <div class="about_title_ability" style="margin-bottom:90px;">PROGRAMMING</div>
                 <div class=progress_bar>
                     <div class="progress_bar_text">HTML</div>
                     <div class="range" style="--p:60">
                         <div class="range__label"></div>
                     </div>
                 </div>
-        
                 <div class=progress_bar>
                     <div class="progress_bar_text">CSS</div>
                     <div class="range" style="--p:30">
                         <div class="range__label"></div>
                     </div>
                 </div>
-            
                 <div class=progress_bar>
                     <div class="progress_bar_text">Java</div>
                     <div class="range" style="--p:60">
                         <div class="range__label"></div>
                     </div>
                 </div>
-            
                 <div class=progress_bar>
                     <div class="progress_bar_text">Python</div>
                     <div class="range" style="--p:50">
@@ -234,8 +243,32 @@
             Tel：+886-915-891-229
         </div>
     </footer>
-    <script src="bar.js"></script>
-    
+    <div class="back-top hide" title="回頂部"></div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // 捲軸偵測距離頂部超過 50 才顯示按鈕
+            $(window).scroll(function () {
+            if ($(window).scrollTop() > 50) {
+                if ($(".back-top").hasClass("hide")) {
+                $(".back-top").toggleClass("hide");
+                }
+            } else {
+                $(".back-top").addClass("hide");
+            }
+            });
+        
+            // 點擊按鈕回頂部
+            $(".back-top").on("click", function (event) {
+            $("html, body").animate(
+                {
+                scrollTop: 0
+                },
+                500 // 回頂部時間為 500 毫秒
+            );
+            });
+        });
+    </script>
 </body>
 </html>
 

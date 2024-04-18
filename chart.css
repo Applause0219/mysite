@@ -47,7 +47,7 @@
     transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
   }
   .animate {
-    animation:p 1s .5s both;
+    animation:p 1s .5s infinite both;
   }
 
   @keyframes p {
